@@ -1,0 +1,15 @@
+@prefix : <http://fa-context.github.io/fa-object.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:DataItem  rdf:type owl:Class .
+:foo  rdf:type owl:DatatypeProperty .
+:baz  rdf:type owl:DatatypeProperty .
+
+:foo  rdfs:domain  :DataItem ;
+      rdfs:range   :DataItem .
+
+:baz  rdfs:domain  :DataItem ;
+            rdfs:range   :DataItem .
