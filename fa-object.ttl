@@ -5,11 +5,16 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :DataItem  rdf:type owl:Class .
+
+:555-GreatType rdf:subClass :DataItem
+
 :foo  rdf:type owl:DatatypeProperty .
 :baz  rdf:type owl:DatatypeProperty .
 
-:foo  rdfs:domain  :DataItem ;
+:foo  rdfs:domain  :555-GreatType ;
       rdfs:range   :DataItem .
 
-:baz  rdfs:domain  :DataItem ;
+:baz  rdfs:domain  :555-GreatType ;
             rdfs:range   :DataItem .
+
+
